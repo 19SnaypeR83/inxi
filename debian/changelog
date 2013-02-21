@@ -1,0 +1,5 @@
+inxi (1.8.38-1) unstable; urgency=low
+
+  * Initial release. (Closes: #686800)
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Thu, 21 Feb 2013 10:25:42 +0100

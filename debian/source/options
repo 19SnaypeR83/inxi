@@ -1,0 +1,4 @@
+# dont put xyz in the tarball
+tar-ignore=.xyz
+compression = "xz"
+
