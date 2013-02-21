@@ -23,9 +23,11 @@ Forwarded: <no|not-needed|url proving that it has been forwarded>
 Reviewed-By: <name and email of someone who approved the patch>
 Last-Update: <YYYY-MM-DD>
 
---- a/inxi
-+++ b/inxi
-@@ -219,7 +219,7 @@
+Index: master/inxi
+===================================================================
+--- master.orig/inxi
++++ master/inxi
+@@ -235,7 +235,7 @@ A_X_DATA=''
  ### Boolean true/false globals	## usage: 'B_<var>'
  # flag to allow distro maintainers to turn off update features. If false, turns off
  # -U and -! testing/advanced update options, as well as removing the -U help menu item
@@ -34,13 +36,15 @@ Last-Update: <YYYY-MM-DD>
  B_COLOR_SCHEME_SET='false'
  B_CONSOLE_IRC='false'
  # triggers full display of cpu flags
-@@ -2045,7 +2045,8 @@
+@@ -2203,8 +2203,9 @@ get_parameters()
  					error_handler 4 "$OPTARG"
  				fi
  				;;
--			U)	script_self_updater "$SCRIPT_DOWNLOAD" 'svn server'
+-			U)	script_self_updater "$SCRIPT_DOWNLOAD" 'svn server' "$opt"
+-				;;
 +			U)	echo "You get updates with the package management"
 +				exit 0
- 				;;
++				;;
  			V)	print_version_info
  				exit 0
+ 				;;
