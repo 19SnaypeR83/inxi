@@ -6,6 +6,8 @@ Uploaders: Mateusz Łukasik <mati75@linuxmint.pl>, Unit 193 <unit193@ninthfloor.
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.4
 Homepage: http://code.google.com/p/inxi/
+Vcs-Git: git://github.com/mati75/inxi.git
+Vcs-Browser: https://github.com/mati75/inxi.git
 
 Package: inxi
 Architecture: all
