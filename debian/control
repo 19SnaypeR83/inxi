@@ -1,44 +1,18 @@
 Source: inxi
-Section: admin
+Section: misc
 Priority: extra
-Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
-Build-Depends: debhelper (>= 9),
- xsltproc,
- docbook-xsl,
- quilt
+Maintainer: Debian inxi Maintainers <inxi-devel@lists.alioth.debian.org>
+Uploaders: Mateusz Łukasik <mati75@linuxmint.pl>, Unit 193 <unit193@ninthfloor.org>
+Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.4
-Homepage: http://techpatterns.com/forums/about1131.html
-Vcs-Git: git://github.com/mati75/inxi.git
-Vcs-Browser: https://github.com/mati75/inxi.git
+Homepage: http://code.google.com/p/inxi/
 
 Package: inxi
 Architecture: all
-Depends: ${misc:Depends},
- ${shlibs:Depends},
- procps,
- pciutils,
- gawk
-Suggests: ceni,
- x11-xserver-utils,
- mesa-utils,
- irssi | xchat | konversation,
- module-init-tools,
- hddtemp,
- net-tools,
- iproute,
- lm-sensors 
-Description: System info script for irc
- Inxi is a system information script for IRC (Internet Relay Chat) clients.
- A system information script can display all kinds of things about your 
- hardware and software to users in a chatroom,  so they can help you diagnose 
- problems, ... or just marvel at your system specs and kernel version ;)
- It was created to serve the need for a infoscript that isn't dependent on a 
- particular irc client. Because most irc clients support the /exec command, a 
- script that runs with /exec would be most portable.
- .
- inxi is a fork of infobash 3.02, the original bash sys info script by locsmif
- As time permits functionality improvements and recoding will occur.
- .
- inxi is tested with Irssi, Xchat, Konversation, BitchX, KSirc, ircII,
- Gaim/Pidgin, Weechat, KVIrc and Kopete.
-
+Depends: ${misc:Depends}, bash (>=3.0), gawk, grep, pciutils, procps,  sed
+Recommends: dmidecode, file, hddtemp, iproute, lm-sensors,  mesa-utils,
+ module-init-tools, net-tools, sudo, usbutils, x11-utils, x11-xserver-utils
+Description: full featured system information script (forked from infobash)
+ Inxi is a system information script that can display various things about
+ your hardware and software to users in an IRC chatroom or support forum.
+ It runs with the /exec command in most IRC clients and /inxi in quassel.
