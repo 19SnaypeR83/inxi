@@ -1,5 +1,5 @@
-inxi (1.8.47-1) unstable; urgency=low
+inxi (1.9.5-1) unstable; urgency=low
 
   * Initial release. (Closes: #686800)
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Sat, 11 May 2013 15:35:55 +0200
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 19 May 2013 21:25:05 +0200
